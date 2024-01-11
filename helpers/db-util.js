@@ -6,7 +6,6 @@ export async function connectDatabase() {
     const connectionString = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_cluster}.1ojuaql.mongodb.net/?retryWrites=true&w=majority`
 
     const client = await MongoClient.connect(
-        // 'mongodb+srv://root:!Q2wfall@nextjs-eventapp.1ojuaql.mongodb.net/?retryWrites=true&w=majority'
         connectionString
     );
 
